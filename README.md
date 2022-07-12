@@ -17,3 +17,6 @@ Tool for testing
 ```bash
 sudo apt install bats
 ```
+
+- [Triggering a workflow](https://docs.github.com/en/actions/using-workflows/triggering-a-workflow)
+
