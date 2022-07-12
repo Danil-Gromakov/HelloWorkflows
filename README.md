@@ -19,4 +19,23 @@ sudo apt install bats
 ```
 
 - [Triggering a workflow](https://docs.github.com/en/actions/using-workflows/triggering-a-workflow)
+- [Events that trigger workflows](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows)
+- [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
+
+Use **concurrency** to ensure that only a single job or workflow using the same concurrency group will run at a time. A concurrency group can be any string or expression.
+
+A workflow run is made up of one or more **jobs, which run in parallel by default.** To run jobs sequentially, you can define dependencies on other jobs using the jobs.<job_id>.needs keyword
+
+- [Choosing GitHub-hosted runners](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#choosing-github-hosted-runners)
+- [Example: Using secrets](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-secrets)
+- [Example: Using an action inside a different private repository than the workflow](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-an-action-inside-a-different-private-repository-than-the-workflow)
+- [Example: Running a job within a container](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-running-a-job-within-a-container)
+
+-[on.schedule](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onschedule)
+
+
+Note: If your workflows use Docker container actions, job containers, or service containers, then you must use a Linux runner:
+
+    If you are using GitHub-hosted runners, you must use an Ubuntu runner.
+    If you are using self-hosted runners, you must use a Linux machine as your runner and Docker must be installed.
 
