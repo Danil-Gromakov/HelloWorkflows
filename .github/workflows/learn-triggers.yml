@@ -7,7 +7,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: build
       - run: echo 'building'
 
   publish:
@@ -15,5 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      - name: publish
       - run: echo 'publishing'
