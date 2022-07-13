@@ -1,4 +1,4 @@
-name: learn-triggers
+name: learn-commands
 on:
   push:
     branches:
