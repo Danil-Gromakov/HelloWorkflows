@@ -31,7 +31,7 @@ A workflow run is made up of one or more **jobs, which run in parallel by defaul
 - [Example: Using an action inside a different private repository than the workflow](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-an-action-inside-a-different-private-repository-than-the-workflow)
 - [Example: Running a job within a container](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-running-a-job-within-a-container)
 
--[on.schedule](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onschedule)
+- [on.schedule](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onschedule)
 
 
 Note: If your workflows use Docker container actions, job containers, or service containers, then you must use a Linux runner:
@@ -39,3 +39,8 @@ Note: If your workflows use Docker container actions, job containers, or service
     If you are using GitHub-hosted runners, you must use an Ubuntu runner.
     If you are using self-hosted runners, you must use a Linux machine as your runner and Docker must be installed.
 
+- [Workflow commands for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions)
+
+- [Using workflow commands to access toolkit functions](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#using-workflow-commands-to-access-toolkit-functions)
+- [Example: Setting a warning message](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#example-setting-a-warning-message)
+- [Adding a job summary](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#adding-a-job-summary)

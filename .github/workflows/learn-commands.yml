@@ -1,0 +1,22 @@
+name: learn-triggers
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'building'
+      - run: pwd
+
+  publish:
+    needs: [build]
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - run: echo 'publishing'
+      - run: pwd
+      - run: echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY  
+
