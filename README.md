@@ -3,11 +3,10 @@
 
 - [Автоматизация глазами разработчика: Github Actions для стартапа](https://habr.com/ru/post/595627/)
 
-https://github.com/actions/starter-workflows/issues/785
-https://www.edwardthomson.com/blog/github_actions_11_secrets.html
-https://stackoverflow.com/questions/67964110/how-to-access-secrets-when-using-flutter-web-with-github-actions/67998780#67998780
+- [How to use environment secret on github action?](https://github.com/actions/starter-workflows/issues/785)
+- [GitHub Actions Day 11: Secrets](https://www.edwardthomson.com/blog/github_actions_11_secrets.html)
+- [How to access secrets when using flutter web with github actions](https://stackoverflow.com/questions/67964110/how-to-access-secrets-when-using-flutter-web-with-github-actions/67998780#67998780)
 
-***
 
 --------------------------------------------------------------------------
 
