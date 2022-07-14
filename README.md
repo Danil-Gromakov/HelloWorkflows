@@ -3,6 +3,10 @@
 
 - [Автоматизация глазами разработчика: Github Actions для стартапа](https://habr.com/ru/post/595627/)
 
+https://github.com/actions/starter-workflows/issues/785
+https://www.edwardthomson.com/blog/github_actions_11_secrets.html
+https://stackoverflow.com/questions/67964110/how-to-access-secrets-when-using-flutter-web-with-github-actions/67998780#67998780
+
 ***
 
 --------------------------------------------------------------------------
