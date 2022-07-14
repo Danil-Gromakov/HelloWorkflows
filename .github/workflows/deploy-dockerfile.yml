@@ -5,7 +5,7 @@ name: test deploy dockerfile
 on:
   push:
     # при push в master
-    branches: [ master ]
+    branches: [ main ]
 
   # pull_request:
   #   # при создании pull request на master
