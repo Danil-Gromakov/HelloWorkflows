@@ -26,9 +26,12 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Show secret 
-        
-        run: echo "${ BOX_PASSWORD }"
-      
+        with:
+          BOX_PASSWORD: ${{ secrets.BOX_PASSWORD }}
+
+        run: echo $BOX_PASSWORD is total secret  
+   
+
       # - name: Docker build
       #   run: docker build -f Dockerfile -t deploy --build-arg ZIP_ACCESS_TOKE=123 .
  
