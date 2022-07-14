@@ -1,5 +1,12 @@
 # HelloWorkflows
 
+
+- [Автоматизация глазами разработчика: Github Actions для стартапа](https://habr.com/ru/post/595627/)
+
+
+--------------------------------------------------------------------------
+
+
 - [About workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
 
 Workflows are defined in the .github/workflows directory in a repository
