@@ -20,13 +20,14 @@ jobs:
     runs-on: ubuntu-latest
     # Шаги действия
     steps:
-      with:
-        BOX_PASSWORD: ${{ secrets.BOX_PASSWORD }}
-
 
       # Шаг 1: собираем сервисы в режиме тестирования
       - uses: actions/checkout@v2
+      
       - name: Show secret        
+        env:
+          BOX_PASSWORD: ${{ secrets.BOX_PASSWORD }}
+
         run: |
             echo $BOX_PASSWORD is total secret  
    
