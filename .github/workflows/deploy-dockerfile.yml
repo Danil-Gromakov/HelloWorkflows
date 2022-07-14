@@ -23,7 +23,7 @@ jobs:
       # Шаг 1: собираем сервисы в режиме тестирования
       - uses: actions/checkout@v2
       - name: Docker build
-        run: docker build -f docker-compose.prod.yml -t deploy --build-arg ZIP_ACCESS_TOKE=123
+        run: docker build -f docker-compose.prod.yml -t deploy --build-arg ZIP_ACCESS_TOKE=123 .
  
       # Шаг 2: 
       - name: Docker ps
