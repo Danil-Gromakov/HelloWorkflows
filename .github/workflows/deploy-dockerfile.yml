@@ -7,9 +7,6 @@ on:
     # при push в master
     branches: [ main ]
 
-  # pull_request:
-  #   # при создании pull request на master
-  #   branches: [ master ]
 
 # Что будем делать (экшены)
 jobs: 
@@ -17,21 +14,18 @@ jobs:
     environment: production
     env:
       BOX_PASSWORD: ${{ secrets.BOX_PASSWORD }}
-
-  # Имя действия, придумываем сами
-  deploy-dockerfile:
-    # На какой ОС будет работать виртуальная машина
-    # Можно выбрать Ubuntu, Windows Server или macOS
+      
     runs-on: ubuntu-latest
+
     # Шаги действия
     steps:
-
-      # Шаг 1: собираем сервисы в режиме тестирования
-      - uses: actions/checkout@v2
-      
       - name: Show secret              
         run: |
             echo $BOX_PASSWORD is total secret  
+
+      # Шаг 1: собираем сервисы в режиме тестирования
+      # - uses: actions/checkout@v2
+      
   
 
       # - name: Docker build
