@@ -20,10 +20,16 @@ jobs:
     runs-on: ubuntu-latest
     # Шаги действия
     steps:
+      
+
       # Шаг 1: собираем сервисы в режиме тестирования
       - uses: actions/checkout@v2
+      
+      - name: files 
+        run: ls -l 
+      
       - name: Docker build
-        run: docker build -f docker-compose.prod.yml -t deploy --build-arg ZIP_ACCESS_TOKE=123 .
+        run: docker build -f Dockerfile -t deploy --build-arg ZIP_ACCESS_TOKE=123 .
  
       # Шаг 2: 
       - name: Docker ps
