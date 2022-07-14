@@ -12,28 +12,27 @@ on:
   #   branches: [ master ]
 
 # Что будем делать (экшены)
-jobs:
+jobs: 
+  build:
+    environment: production
+    env:
+      BOX_PASSWORD: ${{ secrets.BOX_PASSWORD }}
+
   # Имя действия, придумываем сами
   deploy-dockerfile:
+    # На какой ОС будет работать виртуальная машина
+    # Можно выбрать Ubuntu, Windows Server или macOS
+    runs-on: ubuntu-latest
+    # Шаги действия
+    steps:
+
+      # Шаг 1: собираем сервисы в режиме тестирования
+      - uses: actions/checkout@v2
+      
+      - name: Show secret              
+        run: |
+            echo $BOX_PASSWORD is total secret  
   
-    build:
-      environment: production
-      env:
-        BOX_PASSWORD: ${{ secrets.BOX_PASSWORD }}
-
-      # На какой ОС будет работать виртуальная машина
-      # Можно выбрать Ubuntu, Windows Server или macOS
-      runs-on: ubuntu-latest
-      # Шаги действия
-      steps:
-
-        # Шаг 1: собираем сервисы в режиме тестирования
-        - uses: actions/checkout@v2
-        
-        - name: Show secret              
-          run: |
-              echo $BOX_PASSWORD is total secret  
-   
 
       # - name: Docker build
       #   run: docker build -f Dockerfile -t deploy --build-arg ZIP_ACCESS_TOKE=123 .
