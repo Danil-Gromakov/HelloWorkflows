@@ -11,6 +11,8 @@ ENV zip_access_token $ZIP_ACCESS_TOKE
 # Ключи для yandex cloud
 # COPY ./.aws /root/.aws
 
+COPY . . 
+
 # 1. Установить основные пакеты 
 RUN apt-get update && apt-get install -y sudo git ffmpeg vim curl openvpn unzip wget iputils-ping && \
 	apt-get install -y software-properties-common && \
